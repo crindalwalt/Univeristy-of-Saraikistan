@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    text-decoration: none;
+    padding-left: 40px;
+    color: white;
+    font-size:34px;
+    
+}
+.navbar{
+    position: static;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+.nav-container{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-nav{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.nav-links{
+   text-decoration: none;
+   color: #ffffff
+   ;
+   /* padding: 5px; */
+   font-size: 15px;
+   font-weight: 100;
+   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+   "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+}
+.nav-items{
+    margin: 0px 20px;
+    list-style: none;
+}
+.button{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+.btn{
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: rgb(8, 208, 142);
+    transition: all 1sec ease-in-out;
+
+}
+.btn:hover{
+    background-color: rgb(4, 120, 81);
+}
+ /*----------- course detail css------------ */
+.container{
+    margin: 100px
+
+}
+.body-content{
+    /* width: 900px; */
+    display: flex;
+    justify-content:space-between;
+}
+ .course-img{
+     width: 400px;
+     height: 400px;
+     background-color: cornflowerblue;
+ }
+ .rate-svg{
+     width: 25px;
+     height: 25px;
+ }
+
+ .course-content{
+     margin: 0px 2rem;
+ }
+
+ .d-1{
+     font-size: 50px;
+     margin: 1rem 0rem;
+ }
+ .rate-stars{
+     display: flex;
+     align-items: center;
+ }
+ .review{
+     margin: 0px 10px;
+ }
+ .description{
+     margin: 1rem 0rem;
+     font-size: larger;
+ }
+
+ .btn-body{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .pricing{
+     font-size: xx-large;
+     background-color: rgb(8, 208, 142);
+     color: white;
+    padding: 1rem 2rem;border-radius: .5rem;
+    border: none;
+
+ }
+
+
+ .m-1{
+     margin: 1rem 0rem;
+ }

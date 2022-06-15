@@ -1,0 +1,104 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+.action {
+	position: relative;
+	top: 10px;
+	right: 30px;
+}
+
+.action .profile {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.action .profile img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+}
+
+.action .menu::before {
+	content: "";
+	position: absolute;
+	top: -.5rem;
+	right: 1.8rem;
+	width: 20px;
+	height: 20px;
+	background-color: #efefef;
+	transform: rotate(45deg);
+}
+
+.action .menu {
+	position: absolute;
+	top: 80px;
+	right: -10px;
+	padding: 5px 5px;
+	background-color: #efefef;
+	width: 200px;
+	box-sizing: 0px 5px 5px rgb(53, 51, 51);
+	border-radius: 15px;
+	transition: all .3s ease-out;
+	visibility: none;
+	opacity: 0;
+	/* display: none; */
+	z-index: 1;
+}
+
+.action .menu.active {
+	visibility: visible;
+	/* display: block; */
+	opacity: 1;
+}
+
+.action .menu h3 {
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	padding: 20px 0px;
+	font-weight: 500;
+	color: #555;
+	line-height: 1.2em;
+}
+
+.action .menu h3 span {
+	font-weight: 400;
+	color: #afaaaa;
+	font-size: 14px;
+}
+
+.action .menu ul li {
+	list-style: none;
+	padding: 10px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+.action .menu ul li img {
+	max-width: 20px;
+	margin-right: 15px;
+	opacity: .5;
+
+}
+
+.action .menu ul li:hover img {
+	opacity: 1;
+}
+
+.action .menu ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #555;
+}

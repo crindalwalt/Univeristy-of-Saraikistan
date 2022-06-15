@@ -1,0 +1,152 @@
+.temparea {
+    padding-top: 3rem;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.flyer {
+    width: 270px;
+    height: 500px;
+    background-color: rgb(216, 216, 216);
+    border-radius: .5rem;
+    margin: 1rem;
+    box-shadow: 5px 5px 24px  grey ;
+}
+
+.flyer-head {
+    width: 100%;
+    height: 60px;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+
+    position: relative;
+    border-radius: .5rem;
+}
+
+.f-head-uniLogo-holder {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 95px;
+    /* background-image: url("assets/images/logo.png"); */
+
+}
+
+.f-head-uniLogo-holder img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+
+
+.flyer-body {
+    padding-top: 60px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.f-body-content {
+    padding: 1rem;
+}
+
+.tag {
+    width: 70px;
+    height: 20px;
+    background-color: rgb(91, 95, 91);
+    color: white;
+    margin: .5rem .1rem;
+    border-radius: .3rem;
+    padding: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+}
+
+.tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+.tagimage {
+    width: 10px;
+    margin-left: 1px;
+    /* text-align: start; */
+}
+
+.custom-lead {
+    margin-top: .5rem;
+    font-size: x-large;
+}
+
+.custom-h-2 {
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: none;
+}
+
+.custom-btn {
+    padding: .4rem 3rem;
+    border-radius: 2rem;
+    background-color: tomato;
+    border: none;
+    color: white;
+    border: 3px solid rgb(255, 89, 60);
+    box-shadow: 5px 5px 24px tomato;
+    transition: all .3s ease-out;
+}
+
+.custom-btn:hover {
+    background-color: lightgreen;
+    border: 3px solid rgb(125, 250, 125);
+    color: black;
+}
+
+.custom-btn:active {
+    transform: scale(.9);
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 3px;
+    margin: .5rem 0px;
+}
+
+.callOfAction {
+    position: absolute;
+    bottom: 85px;
+    left: 25px;
+
+}
+
+.rating-div img {
+    width: 30px;
+}
+.card1{
+    width: 250px;
+    height: 200px;
+    margin: 1rem;
+}
+.card1 img{
+    width: inherit;
+    height: inherit;
+    border-radius: .3rem;
+}
+.innerBanner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}

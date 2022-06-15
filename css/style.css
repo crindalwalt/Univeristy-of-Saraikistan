@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@500&display=swap');
+
+
+
+.mainBox {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(182, 176, 169); */
+    background-image: url("../assets/images/login-bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: grayscale(10px); */
+}
+
+.innerBox {
+    width: 400px;
+    background-color: #efefef;
+    padding: 2rem;
+    border-radius: .3rem;
+    box-shadow: 5px 5px 24px grey;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+
+}
+
+.unline {
+    text-decoration: none;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+.brand img {
+    width: 80px;
+    height: 80px;
+    border-radius: .3rem;
+}
+
+.brand h1 {
+    font-size: larger;
+}
+
+.form-white.input-group>.form-control:focus {
+    border-color: #fff;
+    box-shadow: inset 0 0 0 1px #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-color: #90d5ec;
+    background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+    padding: 5rem 5rem;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+
+}
+.profile-face{
+    width: 40px;
+    margin-right: .5rem;
+}
+
+.icon-center{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

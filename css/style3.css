@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navi_fixed{
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+.mar-5{
+    margin-top: 5rem;
+}
+.mainContainer{
+    margin: 4rem 10rem;
+
+}
+
+
+.landing{
+    /* background-color: rgba(255, 0, 0, 0.39); */
+    display: flex;
+}
+
+.landing_part{
+    width: 400px;
+    /* height: 40px; */
+    /* background-color: purple; */
+    margin: 1rem;
+
+}
+
+.c-ps{
+    color: var(--s-color);
+    font-weight: bold;
+}
+
+.btn-landing{
+    padding: .5rem 1.5rem;
+    background-color: var(--p-color);
+    border: none;
+    border-radius: .3rem;
+    color: white;
+
+}
+
+.card-img{
+    width: 100px;
+    height: 100px;
+}
+
+#footer{
+    width: 100%;
+    /* height: 200px; */
+    padding: 3rem;
+    background-color: rgba(43, 42, 42, 0.884);
+    color: #fff;
+}
+.footer-content{
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-icon{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--b-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .6rem;
+    margin: .4rem;
+    border: 3px solid var(--s-color);
+    cursor: pointer;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.c-sc{
+    color: var(--p-color);
+    font-weight: bold;
+}
+
+.table-row:hover{
+    background-color: rgba(243, 241, 211, 0.836);
+}
+.table-data:hover{
+    color: var(--p-color);
+
+}
+.table-head-row{
+    border: 1.5px solid var(--s-color);
+    background-color: var(--b-color);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.liner{
+    width: 1rem;
+    height: 20rem;
+    background-color:   lightsalmon;
+    margin: 1rem;
+    border-radius: .9rem;
+}
+.about-landing-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner-huge{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightsalmon;
+    padding: 1rem;
+    border-radius: .4rem;
+    margin: 1rem;
+}
+.propBox{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding: .9rem;
+    align-items: center;
+    transition: all .3s ;
+    cursor: pointer;
+
+}
+.propBox:hover{
+    border: 3px solid lightgreen;
+}
+
+
+.btn-del{
+    padding: .4rem 1.4rem;
+    font-size: small;
+    border: none;
+    background-color: rgb(245, 106, 106);
+    border-radius: .2rem;
+    color: white;
+    transition: all .2s ease-out;
+}
+.btn-del:hover{
+    background-color: red;
+}
+
+.btn-update{
+    padding: .4rem 1.4rem;
+    font-size: small;
+    border: none;
+    background-color: rgb(106, 201, 245);
+    border-radius: .2rem;
+    color: white;
+    transition: all .2s ease-out;
+}
+.btn-update:hover{
+    background-color: rgb(41, 179, 243);
+}
