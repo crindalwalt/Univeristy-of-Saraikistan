@@ -3,6 +3,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="bootstrap/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/alert.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/profile.css">
 <link rel="stylesheet" href="css/style3.css">
 <link rel="stylesheet" href="css/navbar.css">
 <link rel="stylesheet" href="css/home.css">

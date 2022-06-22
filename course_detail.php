@@ -1,3 +1,20 @@
+<?php
+if(isset($_GET['id'])){
+    include "backend/dbcon.php";
+}else{
+    header("location:home.php?id=notFound");
+}
+
+
+
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,51 +55,66 @@
     </nav>
      -->
     <!------------------- detail-section---------------- -->
-    <div class="container">
-        <section class="body-content">
-            <din class="course-image">
-                <img class="course-img rounded" src="assets/images/1.jpg" alt="image not loading">
-            </din>
-            <div class="course-content ">
-                <h3>TechSchool Exclusive</h3>
-                <h1 class="d-1">BS Software Engineering</h1>
-                <span class="rate-stars">
-                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="rate-svg" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                    </svg>
-                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="rate-svg" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                    </svg>
-                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="rate-svg" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                    </svg> 
-                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="rate-svg" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                    </svg>
-                     <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="rate-svg" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                    </svg>
-                    <span class="review"> <b> 5 reviews </b></span>
-                </span>
-                <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure autem esse earum et similique officia perferendis quas voluptate odio, unde reiciendis ut porro itaque, est natus nihil architecto placeat nulla distinctio animi error, facilis commodi? Est natus, ut excepturi ipsam repellendus voluptatum ipsa perspiciatis, velit sed sint, eius molestias harum?
-                </p>
-                <div class="m-1">
-                    <hr>
-                </div>
-                <div class="btn-body">
-                    <div class="pricing">$450</div>
-                    <form action="backend/enroll_course.php" method="POST">
-                        <input name="id" type="hidden" value="Emroll Now">
-                        <button class="course.btn pricing" type="submit"> Enroll Now
 
-                        </button>
-
-                    </form>
-                </div>
+<?php
+$course_id = $_GET['id'];
+ 
+$course_sql = "SELECT * FROM `courses` WHERE `course_id`= '$course_id'";
+$course_sql_run = mysqli_query($connection , $course_sql);
+while($rows = mysqli_fetch_assoc($course_sql_run)){
+    echo '<div class="container">
+    <section class="body-content">
+        <din class="course-image">
+            <img class="course-img rounded" src="'.$rows['course_image'].'" alt="image not loading">
+        </din>
+        <div class="course-content ">
+            <h3>TechSchool Exclusive</h3>
+            <h1 class="d-1"><p class="custom-lead">  Bacholars of</p> '.$rows['course_name'].'</h1>
+            <span class="rate-stars">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="rate-svg" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="rate-svg" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="rate-svg" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg> 
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="rate-svg" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                 <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="rate-svg" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                <span class="review"> <b> 5 reviews </b></span>
+            </span>
+            <p class="description">
+              '.$rows['course_desc'].'
+            </p>
+            <div class="m-1">
+                <hr>
             </div>
-        </section>
-    </div>
+            <div class="btn-body">
+                <div class="pricing">'.$rows['course_price'].'</div>
+                <form action="backend/enroll.php" method="POST">
+                    <input name="id" type="hidden" value="'.$rows['course_id'].'">
+                    <button class="course.btn pricing" type="submit"> Enroll Now
+
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+</div>';
+}
+
+
+
+?>
+
+
+    
     
 </body>
 <?php include "components/_scripts.php"?>

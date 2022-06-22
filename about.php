@@ -1,9 +1,21 @@
+<?php
+if(!isset($_SESSION['loggedin']) && $_SESSION['loggedin']!="true" ){
+    header("location: index.php");
+
+}
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <?php include "components/_links.php" ?>
-    <title>Document</title>
+    <title>Read About Us</title>
 </head>
 
 <body>

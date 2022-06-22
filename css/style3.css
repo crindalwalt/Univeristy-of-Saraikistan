@@ -174,3 +174,6 @@
 .btn-update:hover{
     background-color: rgb(41, 179, 243);
 }
+.deco_none{
+    text-decoration: none;
+}

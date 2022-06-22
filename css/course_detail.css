@@ -113,7 +113,8 @@
      font-size: xx-large;
      background-color: rgb(8, 208, 142);
      color: white;
-    padding: 1rem 2rem;border-radius: .5rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
     border: none;
 
  }

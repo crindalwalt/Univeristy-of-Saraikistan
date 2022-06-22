@@ -1,14 +1,63 @@
+<?php
+$alert = false;
+if(isset($_GET['acc'])=="created"){
+    $alert = true;
+}
+
+$signup = false;
+if(isset($_GET['account'])=="created"){
+    $signup = true;
+}
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <?php include "components/_links.php"; ?>
-    <title>Document</title>
+    <title>Home page</title>
 </head>
 
 <body>
     <?php include "components/_navbar3.php"; ?>
-
+    <?php 
+        var_dump($_SESSION);
+    
+    ?>
+        <!-- notification------- -->
+        <?php
+        if($alert){
+        echo '<div class="container ">
+        <div id="alertx" class="alert alert-warning alert-dismissible fade show" role="alert">
+                <svg class="bi flex-shrink-0 me-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                </svg>
+           <strong>You have now logged in as '. $_SESSION['username'] . '
+           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+         </div>
+    </div>';
+        }
+        
+        if($signup){
+            echo '<div class="container ">
+            <div id="alertx" class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                    </svg>
+               <strong>You have now logged in as '.$_SESSION['username'].'
+               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+             </div>
+        </div>';
+            }
+        ?>
+        
 
     <!-- Landing page -->
     <div class="container my-5">
@@ -23,7 +72,7 @@
                     <img src="assets/images/logo_noborder.png" alt="" class="uniName img-fluid">
                     <h1>Education Matters</h1>
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorum omnis suscipit inventore nihil dolores officiis aliquam labore culpa quidem ea alias, esse fugiat blanditiis quos sunt necessitatibus repudiandae. In.</p>
-                    <button class="c-btn">Discover our courses</button>
+                    <a href="courses.php" class="c-btn">Discover our courses</a>
                 </div>
             </div>
         </div>
@@ -35,7 +84,7 @@
     <!-- About us banner -->
     <div class="banner df">
         <h2>How its going for us </h2>
-        <button class="c-btn2">About Us</button>
+        <a href="about.php" class="c-btn2 deco_none">About Us</a>
     </div>
 
 
