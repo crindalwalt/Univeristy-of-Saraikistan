@@ -65,7 +65,7 @@ while($rows = mysqli_fetch_assoc($course_sql_run)){
     echo '<div class="container">
     <section class="body-content">
         <din class="course-image">
-            <img class="course-img rounded" src="'.$rows['course_image'].'" alt="image not loading">
+            <img class="course-img rounded" src="assets/course_images/'.$rows['course_image'].'" alt="image not loading">
         </din>
         <div class="course-content ">
             <h3>TechSchool Exclusive</h3>
@@ -113,7 +113,7 @@ while($rows = mysqli_fetch_assoc($course_sql_run)){
 
 ?>
 
-
+<!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, iusto odio officiis accusamus expedita nobis vitae. Modi voluptatibus quaerat expedita, rem consequatur culpa necessitatibus aperiam natus neque. Consectetur repellendus explicabo vero, aperiam, numquam unde dignissimos, consequuntur saepe illo officiis minus! -->
     
     
 </body>

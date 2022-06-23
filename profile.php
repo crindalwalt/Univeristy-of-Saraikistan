@@ -17,7 +17,7 @@
     if($_SESSION['loggedin'] && $_SESSION['loggedin']==true){
         echo' <div class="profile">
         <div class="profile_image ">
-            <img class="user-img rounded-circle" src="assets/'.$_SESSION['user_pic'].'" alt="profile image">
+            <img class="user-img rounded-circle" src="assets/images/'.$_SESSION['user_pic'].'" alt="profile image">
         </div>
         <div class="liner"></div>
 

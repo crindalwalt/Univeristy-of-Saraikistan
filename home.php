@@ -25,11 +25,7 @@ if(isset($_GET['account'])=="created"){
 
 <body>
     <?php include "components/_navbar3.php"; ?>
-    <?php 
-        var_dump($_SESSION);
-    
-    ?>
-        <!-- notification------- -->
+            <!-- notification------- -->
         <?php
         if($alert){
         echo '<div class="container ">

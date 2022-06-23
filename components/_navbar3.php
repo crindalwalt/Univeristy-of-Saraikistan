@@ -41,10 +41,10 @@ session_start();
       <ul class="dflex  icon-center">
         <?php
 
-        if( $_SESSION['loggedin'] == true){
+        if($_SESSION['loggedin'] && $_SESSION['loggedin'] == true){
           echo ' <div class="action">
           <div class="profile">
-              <img src="assets/'.$_SESSION['user_pic'].'" alt="" id="menuPic" onclick="togglemenu();">
+              <img src="assets/images/'.$_SESSION['user_pic'].'" alt="" id="menuPic" onclick="togglemenu();">
           </div>
           <div class="menu  " id="menu">
               <h3>'.$_SESSION['username'].'<br><span>'.$_SESSION['useremail'].'</span></h3>

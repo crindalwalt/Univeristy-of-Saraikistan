@@ -16,6 +16,7 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
         // var_dump($check);
         if(password_verify($password , $student_password_in_db )){
             echo"password matched";
+
             session_start();
             $_SESSION['loggedin'] = true;
             $_SESSION['username'] = $entry['student_fname'];
@@ -24,7 +25,19 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
             $_SESSION['user_pic'] = $entry['student_pic'];
             echo $_SESSION['username'] ;
             echo $_SESSION['useremail'] ;
-            header("location:../home.php?acc=created");
+            $role =  $entry['student_role'];
+            echo $role;
+            if($role == 0){
+                header("location:../home.php?acc=created");
+                
+            }else if ($role == 1){
+                header("location:../dashboard.php?acc=created");
+                
+            }else{
+                header("location:../login.php?acc=created");
+                
+            }
+
         }else{
             echo"Wrong password";
             header("location:../index.php?pass=wrong");
