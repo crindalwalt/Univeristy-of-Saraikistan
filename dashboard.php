@@ -1,4 +1,10 @@
-
+<?php
+session_start();
+var_dump($_SESSION);
+    if( $_SESSION['role'] != "1"){
+        header('location:home.php?no=admin');
+    }
+?>
 <?php
 
 
@@ -8,8 +14,10 @@ if(isset($_GET['acc'])=="created"){
 }
 
 $delet = false;
-if(isset($_GET['delet']) == "done");
-$delet = true;
+if(isset($_GET['delet']) == "done"){
+    $delet = true;
+
+};
 
 ?>
 

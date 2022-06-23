@@ -23,9 +23,10 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
             $_SESSION['useremail'] = $entry['student_email'];
             $_SESSION['userid'] = $entry['student_id'];
             $_SESSION['user_pic'] = $entry['student_pic'];
+
             echo $_SESSION['username'] ;
             echo $_SESSION['useremail'] ;
-            $role =  $entry['student_role'];
+            $_SESSION['role'] =  $entry['student_role'];
             echo $role;
             if($role == 0){
                 header("location:../home.php?acc=created");

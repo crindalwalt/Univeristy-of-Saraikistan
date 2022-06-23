@@ -22,6 +22,7 @@ if(isset($_GET['pass'])=="wrong"){
 </head>
 
 <body>
+    
     <div class="mainBox">
 
         <?php

@@ -40,6 +40,12 @@ session_start();
       </ul>
       <ul class="dflex  icon-center">
         <?php
+        include "backend/dbcon.php";
+        $not_num = "SELECT * FROM `notifications`";
+        $not_num_run = mysqli_query($connection,$not_num);
+        $not_num_actually = mysqli_num_rows($not_num_run);
+
+
 
         if($_SESSION['loggedin'] && $_SESSION['loggedin'] == true){
           echo ' <div class="action">
@@ -51,7 +57,7 @@ session_start();
               <ul>
                   <li>
                       <img src="assets/svg/dashboard.svg" alt="dashboard">
-                      <a href="dashboard.php">Dashboard</a>
+                      <a href="user_dashboard.php">Dashboard</a>
                   </li>
                   <li>
                       <img src="assets/svg/profile_avatar.svg" alt="dashboard">
@@ -59,7 +65,7 @@ session_start();
                   </li>
                   <li>
                       <img src="assets/svg/notification.svg" alt="dashboard">
-                      <a href="notification.php">Notification</a>
+                      <a href="notifications.php">Notification ('. $not_num_actually.')</a>
                   </li>
                   <hr>
                   <li>
